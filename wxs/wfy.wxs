@@ -1,0 +1,13 @@
+var msg = "hello world";
+var name = "wfy";
+
+function sum(num1, num2) {
+  return num1 + num2
+};
+
+//注意点1：module 要导出数据
+module.exports = {
+  msg: msg,
+  name: name,
+  sum: sum
+}

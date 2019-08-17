@@ -1,0 +1,25 @@
+<!-- <wxs module="info">
+  var msg = "hello world";
+  var name = "wfy";
+
+  function sum(num1, num2) {
+    return num1 + num2
+  };
+
+  //注意点1：module 要导出数据
+  module.exports = {
+    msg: msg
+    name: name
+    sum: sum
+  }
+</wxs> -->
+
+<!-- 导入 这里必须使用相对路径-->
+<!--必须加入module -->
+<wxs src="../../wxs/wfy.wxs" module="info" />
+<view>
+  {{info.msg}}
+</view>
+
+<view>{{info.name}}</view>
+<view>{{info.sum(20,30)}}</view>
